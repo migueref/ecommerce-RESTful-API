@@ -3,7 +3,6 @@
 
 require 'json'
 require 'yaml'
-
 VAGRANTFILE_API_VERSION ||= "2"
 confDir = $confDir ||= File.expand_path("vendor/laravel/homestead", File.dirname(__FILE__))
 
@@ -16,7 +15,10 @@ require File.expand_path(confDir + '/scripts/homestead.rb')
 
 Vagrant.require_version '>= 1.9.0'
 
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    config.vm.host_name="migueref"
+
     if File.exist? aliasesPath then
         config.vm.provision "file", source: aliasesPath, destination: "/tmp/bash_aliases"
         config.vm.provision "shell" do |s|

@@ -11,7 +11,7 @@ folders:
         to: /home/vagrant/Code/restfulapi
 sites:
     -
-        map: RESTfulAPI.app
+        map: restfulapi.dev
         to: /home/vagrant/Code/restfulapi/public
 databases:
     - homestead
