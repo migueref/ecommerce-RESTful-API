@@ -18,6 +18,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    protected $table = "users";
+
     protected $fillable = [
         'name',
         'email',
@@ -26,7 +28,6 @@ class User extends Authenticatable
         'verification_token',
         'admin'
     ];
-
     /**
      * The attributes that should be hidden for arrays.
      *

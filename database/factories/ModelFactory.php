@@ -12,6 +12,9 @@
 */
 use App\Category;
 use App\User;
+use App\Product;
+use App\Transaction;
+use App\Seller;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 $factory->define(App\User::class, function (Faker\Generator $faker) {

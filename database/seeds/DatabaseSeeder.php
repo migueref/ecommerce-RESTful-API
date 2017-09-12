@@ -1,4 +1,8 @@
 <?php
+use App\User;
+use App\Category;
+use App\Product;
+use App\Transaction;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
